@@ -1,6 +1,8 @@
+import MessengerDemo from "./chat";
+
 function App() {
   return (
-    <h1>hi</h1>
+    <MessengerDemo />
   );
 }
 
