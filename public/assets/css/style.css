@@ -737,7 +737,8 @@ button {
 }
 
 .wsus__single_chat .messages {
-    background: var(--colorPrimary);
+    /* background: var(--colorPrimary); */
+    background: green;
     display: inline-block;
     padding: 5px 20px;
     border-radius: 50px;
@@ -784,7 +785,7 @@ button {
 }
 
 .wsus__single_chat.chat_right {
-    float: right;
+    float: left;
     padding-right: 0;
     padding-left: 30px;
     align-items: end;
