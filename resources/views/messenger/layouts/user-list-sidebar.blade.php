@@ -1,6 +1,6 @@
 <div class="wsus__user_list_header">
     <h3>
-        <span><img src="images/chat_list_icon.png" alt="Chat" class="img-fluid" /></span>
+        <span><img src="{{ asset('assets/images/chat_list_icon.png') }}" alt="Chat" class="img-fluid"></span>
         پیامرسان
     </h3>
     <span class="setting" data-bs-toggle="modal" data-bs-target="#exampleModal">
