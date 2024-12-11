@@ -435,6 +435,7 @@ button {
 }
 
 .wsus__user_list_item {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -627,6 +628,20 @@ button {
     z-index: 9999;
 }
 
+.wsus__message_paceholder_black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffff !important;
+    z-index: 11;
+}
+
+.select_a_user {
+    padding: 5px 15px 5px 15px;
+    background: #ece9e9;
+    border-radius: 10px;
+}
+
 .wsus__chat_area_header {
     display: flex;
     flex-wrap: wrap;
@@ -737,8 +752,7 @@ button {
 }
 
 .wsus__single_chat .messages {
-    /* background: var(--colorPrimary); */
-    background: green;
+    background: var(--colorPrimary);
     display: inline-block;
     padding: 5px 20px;
     border-radius: 50px;
@@ -786,20 +800,26 @@ button {
 
 .wsus__single_chat.chat_right {
     float: left;
-    padding-right: 0;
-    padding-left: 30px;
+    padding-left: 0;
+    padding-right: 30px;
     align-items: end;
 }
 
 .wsus__single_chat.chat_right .action {
-    right: auto;
-    left: 0;
+    left: auto;
+    right:  0;
 }
 
 .wsus__single_chat.chat_right .time {
     text-align: right;
     left: auto;
     right: 0;
+}
+
+.wsus__single_chat.chat_right {
+    text-align: right;
+    right: auto;
+    left: 0;
 }
 
 .wsus__single_chat.chat_right .time::after {
@@ -895,7 +915,15 @@ button {
     position: relative;
 }
 
+
 .wsus__chat_area_footer form .file {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.wsus__chat_area_footer form .file label {
+    cursor: pointer;
     width: 35px;
     height: 35px;
     background: var(--colorPrimary);
@@ -909,12 +937,9 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    position: absolute;
-    left: 10px;
-    top: 8px;
 }
 
-.wsus__chat_area_footer form .file:hover {
+.wsus__chat_area_footer form .file label:hover {
     background: var(--colorBlack);
     color: var(--colorLightBg);
 }
@@ -1060,6 +1085,8 @@ button {
     flex-wrap: wrap;
     gap: 6px;
     padding: 20px 6px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 .wsus__chat_info_gallery li {
@@ -1136,6 +1163,29 @@ button {
     --bs-spinner-border-width: 2px;
 }
 
+.wsus__single_chat .time,
+.wsus__single_chat .clock {
+    display: block;
+    font-size: 14px;
+    color: var(--paraColor);
+    font-weight: 400;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    text-align: left;
+}
+
+.wsus__single_chat.chat_right .time,
+.wsus__single_chat.chat_right .clock {
+    text-align: right;
+    left: auto;
+    right: 0;
+}
+
+.wsus__single_chat.chat_right .clock i {
+    font-size: 11px;
+}
+
 
 /** Custom Css*/
 
@@ -1149,6 +1199,15 @@ button {
     height: 150px !important;
     width: 150px !important;
 }
+
+.favourite.active {
+    background: var(--colorPrimary) !important;
+}
+
+.favourite.active i{
+    color: var(--colorWhite) !important;
+}
+
 
 /*================================
     Chatting Application End
