@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Traits\FileUploadTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class UserProfileController extends Controller
 {
     use FileUploadTrait;
+
     function update(Request $request) {
         $request->validate([
             'avatar' => ['nullable', 'image', 'max:500'],
@@ -24,7 +26,6 @@ class UserProfileController extends Controller
         $user->name = $request->name;
         $user->user_name = $request->user_id;
         $user->email = $request->email;
-
         if($request->filled('current_password')) {
             $request->validate([
                 'current_password' => ['required', 'current_password'],
@@ -34,9 +35,9 @@ class UserProfileController extends Controller
         }
         $user->save();
 
-        notyf()->addSuccess('با موفقیت بروزرسانی شد.');
+        notyf()->addSuccess('Updated Successfully.');
 
-        return response(['message' => 'با موفقیت بروزرسانی شد!'], 200);
+        return response(['message' => 'Updated Successfully!'], 200);
 
     }
 }
