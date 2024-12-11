@@ -2,7 +2,7 @@
 @section('contents')
     <section class="wsus__chat_app">
         <div class="wsus__user_list">
-           @include('messenger.layouts.user-list-sidebar')
+            @include('messenger.layouts.user-list-sidebar')
         </div>
 
         <div class="wsus__chat_area">
@@ -14,7 +14,7 @@
                         <i class="fas fa-arrow-left"></i>
                     </span>
                     <img src="images/author_img_2.jpg" alt="User" class="img-fluid" />
-                    <h4>Jubaydul islam</h4>
+                    <h4>محمد مهدی کربلایی</h4>
                 </div>
                 <div class="header_right">
                     {{-- <a href="#" class="favourite"><i class="fas fa-star"></i></a> --}}
@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="wsus__single_chat_area">
                     <div class="wsus__single_chat chat_right">
@@ -63,9 +63,9 @@
             <div class="wsus__chat_area_footer">
                 <div class="footer_message">
                     <!-- <div class="img">
-                          <img src="images/chat_img.png" alt="User" class="img-fluid">
-                          <span><i class="far fa-times"></i></span>
-                      </div> -->
+                              <img src="images/chat_img.png" alt="User" class="img-fluid">
+                              <span><i class="far fa-times"></i></span>
+                          </div> -->
                     <form action="#">
                         <div class="file">
                             <label for="file"><i class="far fa-plus"></i></label>
