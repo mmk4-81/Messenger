@@ -1,9 +1,10 @@
-# مسنجر 
+# Messenger
 
-این پروژه یک **سیستم پیام‌رسان** است که با استفاده از **Laravel** برای بک‌اند و **jQuery** برای فرانت‌اند ساخته شده است. برای ارسال و دریافت پیام‌ها به صورت **بلادرنگ** از **Pusher** استفاده شده است.
+**Messenger** is a **university test project** — a real-time messaging system built using **Laravel** for the backend and **jQuery** for the frontend.  
+Real-time message sending and receiving is powered by **Pusher**.
 
-## ویژگی‌ها
-- ارسال و دریافت پیام‌ها در زمان واقعی
-- مشاهده وضعیت آنلاین کاربران
-- ارسال پیام‌های متنی و فایل‌های مختلف (تصاویر و ...)
-- استفاده از Pusher برای ارتباط بلادرنگ
+## Features
+- Real-time sending and receiving of messages
+- Online user status display
+- Support for text messages and various file types (images, etc.)
+- Uses **Pusher** for real-time communication
